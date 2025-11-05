@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "label": "Build Text Adventure (g++)",
+            "type": "cppbuild",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/src/*.cpp",
+                "-o",
+                "${workspaceFolder}/game",
+                "-std=c++17"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Kompiluje všechny .cpp soubory ve složce src do souboru 'game'."
+        }
+    ]
+}
